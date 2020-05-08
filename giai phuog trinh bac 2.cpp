@@ -1,7 +1,8 @@
 # include <stdio.h>
 # include <math.h>
 int main(){
-	float a,b,c,d,x1,x2;
+	float a,b,c,d;
+	float x,x1,x2;
 	printf("nhap a:\n",a);
 	scanf("%f",&a);
 	printf("nhap b:\n",b);
@@ -28,9 +29,9 @@ int main(){
 			printf("phuong trinh vo nghiem");
 		}else{
 			if(d==0){
-			printf("phuong trinh co nghiem %f",x1,x2);
-			scanf("%f",&x1,&x2);
-			x1==x2==-b/(2*a);
+			printf("phuong trinh co nghiem %f",x);
+			scanf("%f",&x);
+			x==-b/(2*a);
 			}
 			else{
 			printf("nghiem x1 la %f:\n",x1);
