@@ -1,17 +1,14 @@
-#include <stdio.h>
+#include <stdio.h>;
 
 int main (){
-	int num;
-	printf ("nhap so nguyen",num);
-	scanf ("%d",num);
-	if( num >= 0){
-		int n1 = num ;
-		int n2=0;
-		for ( n2=0 ; n2<4 ; n2++){
-			n2=n2*10+n1%10;
-			n1=n1/10;
-		} printf ("so nghich dao la %d",&n2);
-	} else{
-		printf("kog thoa man yeu cau");
-	}
+	int n;
+	printf ("nhap so nguyen co 4 chu so bat ki",n);
+	scanf ("%d",&n);
+	int n2=0;
+	for (;n!=0;n/=10){
+	n2 = n2*10+n%10;
+} 
+printf ("nghich dao la %d",n2);
+
 }
+
