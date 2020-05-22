@@ -4,15 +4,19 @@ int main (){
 	int n;
 	printf("nhap so n:\n",n);
 	scanf ("%d",&n);
-	if (n>0){
+	int count=0;
+	if (n==0) {
+	count==1;
+	printf("so chu so cua 0 la 1");
+    }else if (n>0){
+		do{
 		for(int i=0;i<=n;i++){
-		
-			printf("%d",i);
-			
+			n=n/10;
+			count++;
 		}
-	}
-		else {
+	}while (n!=0) ;
+	printf("so chu so cua %d la: %d\n",n,count);
+}else if (n<0){
 		     printf("day kog phai so nguyen duong");
 			}
-		
-	}
+}
