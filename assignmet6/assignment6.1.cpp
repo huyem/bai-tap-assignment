@@ -4,10 +4,10 @@ int main (){
 	int n;
 	printf("nhap so mang :\n");
 	scanf("%d",&n);
-	int ary[n], sole = 0 , t=0 ;
+	int ary[n] ;
 	
 	for(int i=0;i<n;i++){
-		printf("nhap so: %d \n",i);
+		printf("nhap phan tu thu : %d \n",i);
 		scanf("%d",&ary[i]);
 	}
 	int count=0,s;
@@ -17,5 +17,7 @@ int main (){
 		s=ary[i];
 		
 		}
-	}printf ("so le cuoi cung cus mang:%d",s);
+	}
+	if(s!=0)  printf ("so le cuoi cung cus mang:%d",s);
+	else  printf ("mang kog co so le nao");
 }
